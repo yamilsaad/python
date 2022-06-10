@@ -1,0 +1,93 @@
+#ACTIVIDAD NUMERO 1
+
+def calculo_combustible():
+    print(f"La cantidad necesaria de combustible para los Vehiculos Turisticos es {valor1*40} Litros")
+    print(f"La cantidad necesaria de combustible para los Vehiculos Todo Terreno es {valor2*65} Litros")
+    print(f"El total de combustible necesario es: {(valor1*40)+(valor2*65)} Litros")
+
+print("Calcula cantidad de Litros de Combustible")
+valor1=int(input("Ingresa Cantidad de Vehiculos Turisticos: "))
+valor2=int(input("Ingresa Cantidad de Vehiculos Todo Terreno: "))
+
+calculo_combustible()
+
+
+
+
+#BUCLE FOR / ITEMS PARA DICCIONARIO
+"""
+coleccion = {"Yamil":32, "Ayelen":31}
+
+for clave,valor in coleccion.items():
+    print(f"{clave} -> {valor}")
+"""
+
+#FOR RANGE
+
+"""
+print("Inicio")
+
+n=5
+
+for i in range(n):
+    print(i, "hola")
+    
+print("Fin")
+
+"""
+"""
+#WHILE
+variable_centinela=1
+var2=True
+
+while(variable_centinela<=len("hdskjhadfkjjfklksljdf") and var2==True):#el LEN ES PARA CONTAR CARACTERES
+    print(f"{variable_centinela}")
+    variable_centinela=variable_centinela+1 #contador
+    if variable_centinela ==20:
+        var2=False
+        print("Encontramos 20")
+"""        
+#Menu
+"""
+def menu():
+    print("1. Sumar")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("0. Cerrar Programa")
+    #print(1. sumar\n2. restar\n3...)
+    
+def suma(val1,val2):
+    print(f"Resultado de la suma ente {val1} y {val2} es: {val1+val2}")
+    
+def resta(val1,val2):
+    print(f"Resultado de la resta ente {val1} y {val2} es: {val1-val2}")
+    
+def multiplicacion(val1,val2):
+    print(f"Resultado de la multiplicacion ente {val1} y {val2} es: {val1*val2}")
+
+def divicion(val1,val2):
+    print(f"Resultado de la divicion ente {val1} y {val2} es: {val1/val2}")
+    
+
+var_cin=True
+while(var_cin==True):
+    menu()
+    op=int(input("Ingresa una opcion: "))#CASTEO
+    if op!=0:
+        valor1=int(input("Ingresa el valor 1: "))
+        valor2=int(input("Ingresar el valor 2: "))
+    
+        if (op==1):
+            suma(valor1, valor2)
+        elif (op==2):
+            resta(valor1, valor2)
+        elif (op==3):
+            multiplicacion(valor1, valor2)
+        elif (op==4):
+            divicion(valor1, valor2)
+        elif (op==0):
+            var_cin=False
+
+"""
+
